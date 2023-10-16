@@ -1,18 +1,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Frank+Ruhl+Libre:wght@600&family=IBM+Plex+Serif:wght@200&family=Merriweather:ital,wght@1,900&family=Open+Sans&family=Poppins:ital,wght@0,100;0,300;0,400;1,100;1,200;1,300&display=swap');
 
-
-  /* 
-  font-family: 'Archivo Black', sans-serif;
-font-family: 'Frank Ruhl Libre', serif;
-font-family: 'IBM Plex Serif', serif;
-font-family: 'Merriweather', serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Merriweather', sans-serif;
 }
 #main-bar{
     height: 17vh;
@@ -24,11 +16,10 @@ font-family: 'Poppins', sans-serif;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-font-family: 'Merriweather', sans-serif;
-margin-top: -8px;
-position: sticky;
-left: 0;
-top: 0;
+    margin-top: -8px;
+    position: sticky;
+    left: 0;
+    top: 0;
 
 }
 #formtag{
@@ -49,7 +40,6 @@ section{
     display: flex;
     flex-wrap:wrap;
     margin: 30px 0px;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -57,7 +47,6 @@ section #main-div{
     height: 420px;
     width: 360px;
     margin:20px ;
-    /* border: 1px solid red; */
     border-radius: 10px;
     background-color: black;
     display: flex;
@@ -68,14 +57,12 @@ section #main-div{
 section #second-div{
     height:390px;
     width: 330px;
-    /* border: 1px solid blue; */
 }
 #second-div h3{
     text-align: center;
     padding: .8rem .6rem ;
     white-space: nowrap;
     text-overflow: ellipsis;
-    /* max-width: 290px; */
     overflow: hidden;
 }
 #second-div h4{
@@ -95,6 +82,43 @@ section #second-div img{
     border-radius: 5px;
 }
 
+/*^ SLIDER */
+
+.container{
+    height: 60vh;
+    width: 45%;
+    margin: 50px auto;
+    display: flex;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px 2px lightgray;
+}
+.container #image{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.bi{
+    font-size: 30px;
+    border: 1px solid transparent;
+    background-color: rgba(15, 14, 14, 0.13);
+    border-radius: 100%;
+    padding: .4rem;
+    color: aliceblue;
+}
+.bi:hover{
+    background-color: rgba(15, 14, 14, 0.34);
+}
+.bi-caret-left{
+position: absolute;
+top: 45%;
+left: 5px;
+}
+.bi-caret-right{
+    position: absolute;
+    top: 45%;
+    right: 5px;
+}
 
 
 
