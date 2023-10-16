@@ -62,21 +62,21 @@ showmore.addEventListener('click', () => {
 
 
 
-//^ IMAGE SLIDER
+// //^ IMAGE SLIDER
 
-let image=document.getElementById("image")
-let bi=document.querySelectorAll(".bi")
+// let image=document.getElementById("image")
+// let bi=document.querySelectorAll(".bi")
 
-let imageList = ["https://unsplash.com/@frostroomhead","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg"]
+// let imageList = ["https://unsplash.com/@frostroomhead","2.jpeg","3.jpeg","4.jpeg","5.jpeg","6.jpeg"]
 
-let count=0;
-// image.src=imageList[index]
+// let count=0;
+// // image.src=imageList[index]
 
-function displaycolors(){
+// function displaycolors(){
   
-     main.style.backgroundColor=imageList[count]
-     count=(count+1 ) % colors.length
-}
-displaycolors();
-setInterval(displaycolors,2000)
+//      main.style.backgroundColor=imageList[count]
+//      count=(count+1 ) % colors.length
+// }
+// displaycolors();
+// setInterval(displaycolors,2000)
 
