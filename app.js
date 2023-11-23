@@ -13,7 +13,6 @@ async function getmoviesdata() {
 
   if (searchinput.trim() === "") {
     showmore.style.display="none"
-    showmore.style.display="none"
     alert("The Field Cannot Be Empty")
     return
   }
@@ -25,8 +24,8 @@ async function getmoviesdata() {
   console.log(data);
 
   if (data.Error === 'Movie not found!')  {
+    section.innerHTML=`<img src="./assets/pagenotfound.gif" width=300px height=400px style="margin-bottom: 90px;"  alt="" /> `
     showmore.style.display = "none";
-  section.innerHTML=`<img src="./assets/pagenotfound.gif" width=300px height=400px style="margin-bottom: 90px;"  alt="" /> `
   footer.style.position="fixed"
   footer.style.bottom="0"
   footer.style.width="100%"
@@ -34,8 +33,7 @@ async function getmoviesdata() {
   }
 
   if (!data.Search) {
-    console.log("No search results found.");
-    showmore.disabled = false;
+    showmore.style.display="none"
     return;
   }
 

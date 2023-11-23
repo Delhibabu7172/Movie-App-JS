@@ -139,12 +139,12 @@ button{
 @media screen and (max-width:425px){
    #main-bar{
     flex-direction: row;
-    height: 13vh;
+    height: 10vh;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 .5rem;
    }
    #main-bar h2{
-    font-size: 28px;
+    font-size: 27px;
    }
     section #main-div{
         height: 380px;
