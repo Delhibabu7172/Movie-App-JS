@@ -20,7 +20,7 @@ async function getmoviesdata() {
 
 
 
-  let data = await fetch(`http://www.omdbapi.com/?page=${page}&s=${searchinput}&apikey=77908198`);
+  let data = await fetch(`https://www.omdbapi.com/?page=${page}&s=${searchinput}&apikey=77908198`);
   data = await data.json();
   console.log(data);
 
