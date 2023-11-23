@@ -12,20 +12,25 @@ body,html{
 }
 #main-bar{
     width: 100%;
-    height: 17vh;
-    background:linear-gradient(rgba(0, 0, 0, 0.415),rgba(0, 0, 0, 0.541)) ,url(./background.jpg);
+    height: 13vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.415),rgba(0, 0, 0, 0.541)) ,url(./assets/background.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     color: #fff;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 3rem;
     align-items: center;
     /* margin-top: -8px; */
     position: sticky;
     left: 0;
     top: 0;
-
+  z-index: 10;
+}
+#main-bar h2{
+    font-size: 30px;
+    margin-left: 100px;
+    color: yellow;
 }
 #formtag{
     margin-top: 9px;
@@ -33,6 +38,7 @@ body,html{
 #search-box i{
     color:rgb(27, 205, 27);
     font-size: 20px;
+    background: transparent;
 }
 #searchinput{
     padding: .4rem;
@@ -99,9 +105,10 @@ footer{
     text-align: center;
 }
 .footer-path{
-padding: 1.5rem;
+padding: 1rem 0;
 display: flex;
 justify-content: center;
+align-items: center;
 }
 .footer-path a{
     text-decoration: none;
@@ -123,27 +130,41 @@ button{
     border: none;
 }
 
-@media screen and (max-width:375px){
-   
+
+@media screen and (max-width:768px){
+    #main-bar h2{
+        margin-left: 0;
+       }
+}
+@media screen and (max-width:425px){
+   #main-bar{
+    flex-direction: row;
+    height: 13vh;
+    justify-content: space-between;
+    padding: 0 1rem;
+   }
+   #main-bar h2{
+    font-size: 28px;
+   }
     section #main-div{
         height: 380px;
-        max-width: 400px;
-        margin: 20px auto;
-    
+    width: 300px; 
     }
     section #second-div{
         height:350px;
-        width: 400px;
-        padding-inline: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    section #second-div img{
-        height: 270px;
         width: 270px;
     }
-
+    section #second-div img{
+        height: 280px;
+        width: 270px;
+    }
+    #formtag{
+        display: flex;
+    }
+    #searchinput{
+        padding: .4rem 0;
+        width: 130px;
+    }
 }
 
 

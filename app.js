@@ -8,12 +8,12 @@ let footer=document.querySelector('footer')
 
 async function getmoviesdata() {
   try{
-    showmore.disabled = true
+    showmore.style.display="block"
     let searchinput = document.getElementById("searchinput").value;
 
   if (searchinput.trim() === "") {
-    // showmore.style.display="none"
-    showmore.disabled = false;
+    showmore.style.display="none"
+    showmore.style.display="none"
     alert("The Field Cannot Be Empty")
     return
   }
@@ -26,11 +26,10 @@ async function getmoviesdata() {
 
   if (data.Error === 'Movie not found!')  {
     showmore.style.display = "none";
-    // footer.style.display="none"
-    showmore.disabled = false;
-  section.innerHTML=`<img src="./pagenotfound.gif" width=300px height=400px style="margin-bottom: 90px;"  alt="" /> `
-    // alert("search results not found")
-    
+  section.innerHTML=`<img src="./assets/pagenotfound.gif" width=300px height=400px style="margin-bottom: 90px;"  alt="" /> `
+  footer.style.position="fixed"
+  footer.style.bottom="0"
+  footer.style.width="100%"
     return 
   }
 
@@ -45,7 +44,7 @@ async function getmoviesdata() {
   // }
 
   data.Search.forEach(({ Title, Poster, Year}) => {
-    let imgSrc = Poster !== "N/A" ? Poster : "./na.gif";
+    let imgSrc = Poster !== "N/A" ? Poster : "./assets/na.gif";
     section.innerHTML += `
       <div id="main-div">
         <div id="second-div">
